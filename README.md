@@ -1,7 +1,50 @@
-## Skystone Onbot Hybrid
+# Skystone Onbot Hybrid
 While this project does contain the official competition code, this repository is NOT the official FTC Skystone repository. This is a modified version of the Skystone FTC repository with additional gradle build tasks added to allow the java sourcecode of TeamCode to be uploaded onto the robot using OnBotJava.
 
+# Tasks
+---
+### Wipe, Push and Build
+windows: `gradlew.bat everything`
+mac/linux: `./gradlew everything`
 
+deletes all onbot java code from robot, pushes code from teamcode source and initiates a build. 
+this will usually be the only command you ever need to run as this command will ensure that the code on the robot is 
+identical to the local TeamCode source. 
+
+### Wipe
+windows: `gradlew.bat wipe`
+linux: `# ./gradlew wipe`
+
+deletes all onbot java code from robot. this first part of the `everything` task without the rest of it
+
+### Push
+windows: `gradlew.bat push`
+linux: `# ./gradlew push`
+
+pushes all source code from Teamcode to the robot without deleting the existing code. note that this will overwrite existing code, but if a file has been deleted from teamcode, it will not be deleted from the robot if this code is executed. this will 
+
+### Build
+windows: `gradlew.bat build`
+linux: `# ./gradlew build`
+
+initiates a build of the code currently uploaded to the robot. Note that this task alone will not modify the code on the robot, only compile whats already on the robot
+
+### Wipe and push
+windows: `gradlew.bat wipeAndPush`
+linux: `# ./gradlew wipeAndPush`
+
+deletes all onbot java code from robot, pushes code from teamcode source but does NOT compile the robot code. 
+This task is mostly for debugging purposes.
+unless you have a very good reason to, use the `everything` task instead of this one.
+
+### New file
+windows: `gradlew.bat newFile`
+linux: `# ./gradlew newFile`
+
+opens a dialog box similar to the new file dialog in OnBotJava allowing you to create a new file on the robot based on any template built into the current version of the FTC app...
+Yeah, we got a little carried away with this one, you can just ignore this task.
+
+---
 # FTC Readme file below
 
 ## NOTICE
