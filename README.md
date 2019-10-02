@@ -1,6 +1,6 @@
 # Skystone Onbot Hybrid
 While this project does contain the official competition code, this repository is NOT the official FTC Skystone repository. This is a modified version of the Skystone FTC repository with additional gradle build tasks added to allow the java sourcecode of TeamCode to be uploaded onto the robot using OnBotJava.
-
+![Run configurations](https://github.com/clwillingham/skystone_onbot_hybrid/raw/master/runconfigs.png)
 ### Tasks
 ---
 ### Wipe, Push and Build
