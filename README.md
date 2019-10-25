@@ -1,6 +1,18 @@
 # Skystone Onbot Hybrid
 While this project does contain the official competition code, this repository is NOT the official FTC Skystone repository. This is a modified version of the Skystone FTC repository with additional gradle build tasks added to allow the java sourcecode of TeamCode to be uploaded onto the robot using OnBotJava.
 ![Run configurations](https://github.com/clwillingham/skystone_onbot_hybrid/raw/master/runconfigs.png)
+
+# Why
+By editing code within Android Studio and uploading via OnBotJava's API we can gain the advantages of both solutions. Teams can store code locally on there computer, track and maintain code within remotely hosted git repositories and pull the currently running codebase directly from the phone providing both a realtime and long-term collaborative coding environment
+
+|                      |   AndroidStudio   |         OnbotJava         |     OnBotHybrid (This Project)     |
+|---------------------:|:-----------------:|:-------------------------:|:----------------------------------:|
+| Source Code Location |   local computer  |           phone           |      local computer and phone      |
+|      Git VCS Support |        yes        |             no            |                 yes                |
+|         Compile Time |   30-60 seconds   |        2-5 seconds        |             2-5 seconds            |
+|      Upgrade process | Through git merge | Automatic From Play Store |      Automatic from Play Store     |
+| Code Collaboration   | Through Git       | Realtime through phone    | Through git and/or pull from phone |
+
 ### Tasks
 ---
 ### Wipe, Push and Build
