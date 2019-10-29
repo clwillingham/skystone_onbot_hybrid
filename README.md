@@ -3,7 +3,7 @@ While this project does contain the official competition code, this repository i
 ![Run configurations](https://github.com/clwillingham/skystone_onbot_hybrid/raw/master/runconfigs.png)
 
 # Why
-By editing code within Android Studio and uploading via OnBotJava's API we can gain the advantages of both solutions. Teams can store code locally on there computer, track and maintain code within remotely hosted git repositories and pull the currently running codebase directly from the phone providing both a realtime and long-term collaborative coding environment
+By editing code within Android Studio and uploading via OnBotJava's API we can gain the advantages of both solutions. Teams can store code locally on their computer, track and maintain code within remotely hosted git repositories and pull the currently running codebase directly from the phone providing both a realtime and long-term collaborative coding environment
 
 |                      |   AndroidStudio   |         OnbotJava         |     OnBotHybrid (This Project)     |
 |---------------------:|:-----------------:|:-------------------------:|:----------------------------------:|
@@ -20,20 +20,20 @@ windows: `gradlew.bat everything`
 mac/linux: `./gradlew everything`
 
 deletes all onbot java code from robot, pushes code from teamcode source and initiates a build. 
-this will usually be the only command you ever need to run as this command will ensure that the code on the robot is 
+This will usually be the only command you ever need to run as this command will ensure that the code on the robot is 
 identical to the local TeamCode source. 
 
 ### Wipe
 windows: `gradlew.bat wipe`
 linux: `# ./gradlew wipe`
 
-deletes all onbot java code from robot. this first part of the `everything` task without the rest of it
+deletes all onbot java code from robot. The first part of the `everything` task without the rest of it
 
 ### Push
 windows: `gradlew.bat push`
 linux: `# ./gradlew push`
 
-pushes all source code from Teamcode to the robot without deleting the existing code. note that this will overwrite existing code, but if a file has been deleted from teamcode, it will not be deleted from the robot if this code is executed. this will 
+pushes all source code from Teamcode to the robot without deleting the existing code. Note that this will overwrite existing code, but if a file has been deleted from teamcode, it will not be deleted from the robot if this code is executed.
 
 ### Build
 windows: `gradlew.bat build`
@@ -127,7 +127,12 @@ Version 5.2 (20190905-083227)
    * Includes sample Skystone TensorFlow op modes (Blocks).
 * Removes older (season-specific) sample op modes.
 * Includes 64-bit support (to comply with [Google Play requirements](https://android-developers.googleblog.com/2019/01/get-your-apps-ready-for-64-bit.html)).
-* Protects against Stuck OpModes when a Restart Robot is requested. (Thanks to FROGbots-4634) ([ftc_app issue #709](https://github.com/ftctechnh/ftc_app/issues/709))
+* Protects against Stuck OpModes when a Restart Robot is requested
+
+
+
+
+(Thanks to FROGbots-4634) ([ftc_app issue #709](https://github.com/ftctechnh/ftc_app/issues/709))
 * Blocks related changes:
    * Fixes bug with blocks generated code when hardware device name is a java or javascript reserved word.
    * Shows generated java code for blocks, even when hardware items are missing from the active configuration.
